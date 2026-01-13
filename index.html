@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tokoh Bakery - Roti Segar Setiap Hari</title>
+
+    <meta name="description" content="Tokoh Bakery menyediakan roti dan kue segar setiap hari dengan bahan berkualitas dan cita rasa terbaik." />
+    <meta name="author" content="Tokoh Bakery" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* NAVBAR */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: #8b4513;
+            padding: 15px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        nav h1 {
+            color: #fff;
+            font-size: 20px;
+        }
+
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 14px;
+        }
+
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+
+        .btn-nav {
+            background: #f4c430;
+            padding: 8px 18px;
+            border-radius: 20px;
+            color: #333;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 80px 8%;
+        }
+
+        /* HERO */
+        .hero {
+            background: #deb887;
+            text-align: center;
+            padding-top: 140px;
+        }
+
+        .hero h2 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            max-width: 600px;
+            margin: auto;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            background: #8b4513;
+            color: white;
+            border-radius: 8px;
+            text-decoration: none;
+        }
+
+        /* GRID */
+        .grid {
+            display: grid;
+            gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            margin-top: 30px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        /* CTA */
+        .cta {
+            background: #8b4513;
+            color: white;
+        }
+
+        .cta form {
+            background: white;
+            color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 500px;
+            margin: auto;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+        }
+
+        button {
+            width: 100%;
+            margin-top: 15px;
+            padding: 10px;
+            background: #f4c430;
+            border: none;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        /* GRID PRODUK */
+.produk-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+
+/* CARD */
+.card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+    margin: 10px 0 5px;
+    font-size: 16px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #555;
+}
+
+/* IMAGE */
+.card-img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+    .produk-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .produk-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+    </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <h1>Suci Bakery</h1>
+    <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#produk">Produk</a>
+        <a href="#testimoni">Testimoni</a>
+        <a href="#kontak">Kontak</a>
+    </div>
+    <a href="#kontak" class="btn-nav">Pesan</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+    <h2>Roti Segar Setiap Hari</h2>
+    <p>
+        Tokoh Bakery menghadirkan roti dan kue dengan bahan berkualitas,
+        dipanggang fresh setiap pagi untuk keluarga Anda.
+    </p>
+    <a href="#produk" class="btn">Lihat Produk</a>
+</section>
+
+<!-- PROBLEM -->
+<section>
+    <h2>Masalah yang Sering Ditemui</h2>
+    <div class="grid">
+        <div class="card">❌ Roti cepat basi</div>
+        <div class="card">❌ Rasa tidak konsisten</div>
+        <div class="card">❌ Bahan kurang berkualitas</div>
+    </div>
+</section>
+
+<!-- BENEFIT -->
+<section>
+    <h2>Kenapa Tokoh Bakery?</h2>
+    <div class="grid">
+        <div class="card">🍞 Dipanggang fresh setiap hari</div>
+        <div class="card">❤️ Tanpa bahan pengawet</div>
+        <div class="card">🎂 Banyak pilihan roti & kue</div>
+        <div class="card">💰 Harga terjangkau</div>
+    </div>
+</section>
+
+<!-- PRODUK -->
+<section id="produk" class="produk">
+    <h2>Daftar Produk</h2>
+
+    <div class="produk-grid">
+        <div class="card">
+            <img src="c:\Users\Admin\Pictures\Perlu-Tahu-Ini-Jenis-Pastry-dan-Bedanya-dengan-Bakery.jpg.webp" alt="Pastry Tokoh Bakery" class="card-img">
+            <h3>Pastry</h3>
+            <p>Rp 25.000 / pcs</p>
+        </div>
+
+        <div class="card">
+            <img src="c:\Users\Admin\Pictures\freshly_baked_by_origin_bakery_cheese-bagel-bread_full00_876EDFD4-A8EF-44B8-BEBA-BB99C0539A83.webp" alt="Bagels Tokoh Bakery" class="card-img">
+            <h3>Bagels</h3>
+            <p>Rp 30.000 / pcs</p>
+        </div>
+
+        <div class="card">
+            <img src="c:\Users\Admin\Pictures\Homemade-Bakery-Style-Breadsticks-1.jpg" alt="Breadsticks Tokoh Bakery" class="card-img">
+            <h3>Breadsticks</h3>
+            <p>Rp 35.000 / pcs</p>
+        </div>
+
+        <div class="card">
+            <img src="c:\Users\Admin\Pictures\Birley-Bakery-Rye-Bread_5b89674b-ac86-4908-a088-34dea9d0e6f1_1800x1800.webp" alt="Rye Bread Tokoh Bakery" class="card-img">
+            <h3>Rye Bread</h3>
+            <p>Rp 40.000 / pcs</p>
+        </div>
+    </div>
+</section>
+
+
+<!-- TESTIMONI -->
+<section id="testimoni">
+    <h2>Apa Kata Pelanggan?</h2>
+    <div class="grid">
+        <div class="card">“Rotinya lembut dan selalu fresh.” – Sari</div>
+        <div class="card">“Anak-anak suka banget.” – Budi</div>
+        <div class="card">“Harga ramah di kantong.” – Lina</div>
+    </div>
+</section>
+
+<!-- KONTAK -->
+<!-- CTA -->
+<section class="cta" id="contact">
+    <h2 style="text-align: center;">Pesan Sekarang</h2><br>
+    <p style="text-align: center;">Pre-order H-1 | Open Order 08.00 - 20.00</p><br>
+    <form onsubmit="sendWA(event)">
+        <input type="text" id="name" placeholder="Nama Anda" required>
+        <select id="product" required>
+            <option value="">Pilih Produk</option>
+            <option>Pastry</option>
+            <option>Begels</option>
+            <option>Breadsticks</option>
+            <option>Rye Bread</option>
+        </select>
+        <button type="submit">Pesan via WhatsApp</button>
+    </form>
+</section>
+<!-- Floating WhatsApp -->
+<a href="#contact" class="wa-float"><i class="fab fa-whatsapp"></i></a>
+
+<!-- FOOTER -->
+<footer>
+    <p>Suci Bakery</p>
+    <p>© 2026 Suci Bakery. All Rights Reserved.</p>
+    <script>
+        function sendWA(e) {
+            e.preventDefault();
+            const name = document.getElementById("name").value;
+            const product = document.getElementById("product").value;
+            const wa = "628xxxxxxxxxx";
+
+            const msg = `Halo KEY'S PATISSERIE%0A
+Nama: ${name}%0A
+Pesanan: ${product}`;
+
+            window.open('https://wa.me/${wa}?text=${msg}', "_blank");
+        }
+    </script>
+</footer>
+
+</body>
+</html>
